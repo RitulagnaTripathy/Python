@@ -20,7 +20,7 @@ print(ans)
 print("score=10")
 while (score>0):
     #to input the guessed letter
-    print("Guess a letter")
+    print("Guess a Letter")
     guess=input()
     if guess in movie: #to check whether the guessed letter is correct or not
        for i in range(a):
@@ -31,13 +31,13 @@ while (score>0):
                 ans[i]=guess
                 c+=1
                 print(ans)
-                print("Correct guess!")
+                print("Correct Guess!")
                 #3 points will be awarded for correct guess
                 score+=3
                 print(score) #to print score
                 
     if guess not in movie:
-        print("Ooops!Wrong guess")
+        print("Ooops! Wrong Guess")
         #2 points will be deducted for wrong guess
         score-=2
         print(score)#to print score
@@ -46,10 +46,10 @@ while (score>0):
 
 for i in range(a): #declaration of final result
     if ans[i]==movie[i]:
-        print("Congrats..you won!!")
+        print("Congrats..You Won!!")
         break
     else:
-        print("You lose!")
+        print("You Lose!")
         print("Better luck next time")
         break
         
